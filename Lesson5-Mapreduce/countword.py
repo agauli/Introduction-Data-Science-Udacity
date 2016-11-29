@@ -1,9 +1,7 @@
 import logging
 import sys
 import string
-
 from util import logfile
-
 logging.basicConfig(filename=logfile, format='%(message)s',
                    level=logging.INFO, filemode='w')
 
@@ -55,6 +53,5 @@ def word_count():
             else:
                 word_counts[word] = 1
     print word_counts
-
 word_count()
 
